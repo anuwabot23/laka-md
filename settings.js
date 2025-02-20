@@ -1,4 +1,4 @@
-const fs = require('fs');
+econst fs = require('fs');
 if (fs.existsSync('config.env')) require('dotenv').config({ path: './config.env' });
 
 function convertToBool(text, fault = 'true') {
@@ -28,12 +28,12 @@ ANTI_BOT: process.env.ANTI_BOT === undefined ? "false" : process.env.ANTI_BOT,
 ALLWAYS_OFFLINE: process.env.AUTO_READ_STATUS === undefined ? "true" : process.env.AUTO_READ_STATUS,
 READ_MESSAGE: process.env.READ_MESSAGE === undefined ? "false" : process.env.READ_MESSAGE,
 READ_CMD: process.env.READ_CMD === undefined ? "false" : process.env.READ_CMD,
-ALWAYS_RECORDING: process.env.ALWAYS_RECORDING === undefined ? "true" : process.env.ALWAYS_RECORDING,
+ALWAYS_RECORDING: process.env.ALWAYS_RECORDING === undefined ? "false" : process.env.ALWAYS_RECORDING,
 AUTO_REACT: process.env.AUTO_REACT === undefined ? "false" : process.env.AUTO_REACT,
 BAD_NO_BLOCK: process.env.BAD_NO_BLOCK === undefined ? "false" : process.env.BAD_NO_BLOCK,
 AI_CHAT: process.env.AI_CHAT === undefined ? "false" : process.env.AI_CHAT,
 ANTI_CALL: process.env.ANTI_CALL === undefined ? "false" : process.env.ANTI_CALL,
-ALWAYS_TYPING: process.env.ALWAYS_TYPING === undefined ? "false" : process.env.ALWAYS_TYPING,
+ALWAYS_TYPING: process.env.ALWAYS_TYPING === undefined ? "true" : process.env.ALWAYS_TYPING,
 ANTI_DELETE : process.env.ANTI_DELETE === undefined ? 'true' : process.env.ANTI_DELETE,
 OMDB_API_KEY: process.env.OMDB_API_KEY || "76cb7f39",
 DELETEMSGSENDTO : process.env.DELETEMSGSENDTO === undefined ? '' : process.env.DELETEMSGSENDTO
